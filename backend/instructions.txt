@@ -1,3 +1,6 @@
 NEON para o banco de dados online
 RENDER para upar o Back End
 Vercel para upar o frontEnd
+
+link api: https://api-estoque-rcyp.onrender.com
+link frontEnd: https://api-estoque-ten.vercel.app/
