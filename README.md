@@ -1,34 +1,19 @@
-# API de Estoque
+# 📦 Controle de Estoque
 
-Sistema de controle de estoque com CRUD completo, desenvolvido para aprendizado prático de backend com FastAPI.
+Um projeto prático de CRUD de estoque feito para aplicar na prática a integração de uma API em FastAPI com um frontend em React.
 
-## Tecnologias
+---
 
-- **Backend:** FastAPI, SQLAlchemy 2.0, SQLite
-- **Frontend:** React (Vite)
+## 🌎 Onde o projeto está rodando?
 
-## Funcionalidades
+O sistema já está 100% online e dividido nesses dois links:
 
-- Cadastro, listagem, edição e exclusão de produtos
-- Validação de dados com Pydantic
-- Documentação automática da API (Swagger)
+*   💻 **Frontend (Interface):** Hospedado na **Vercel** ➔ https://api-estoque-ten.vercel.app/
+*   🗄️ **Backend (API):** Hospedado no **Render** ➔ https://api-estoque-rcyp.onrender.com
 
-## Como rodar
+---
 
-### Backend
-\`\`\`bash
-cd backend
-python -m venv .venv
-.venv\Scripts\activate  # Windows
-pip install -r requirements.txt
-uvicorn main:app --reload
-\`\`\`
+## 🛠️ Tecnologias usadas
 
-### Frontend
-\`\`\`bash
-cd frontend-estoque
-npm install
-npm run dev
-\`\`\`
-
-A API sobe em `http://127.0.0.1:8000` (documentação em `/docs`) e o frontend em `http://localhost:5173`.
+*   **No servidor:** Python com FastAPI, SQLAlchemy (ORM), Pydantic e PostgreSQL.
+*   **Na interface:** React (Vite) consumindo a API com Fetch API nativo.
