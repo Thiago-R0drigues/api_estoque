@@ -21,7 +21,8 @@ app.add_middleware(
 
 @app.get("/")
 def home():
-    return {"mensagem": "API de estoque no ar"}
+    return [{"mensagem": "API de estoque no ar"},
+            {'docs': 'https://api-estoque-rcyp.onrender.com/docs'}]
 
 
 @app.get('/produtos')

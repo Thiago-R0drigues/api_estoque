@@ -7,8 +7,10 @@ function App() {
   const [quantidade, setQuantidade] = useState("");
   const [editandoId, setEditandoId] = useState(null);
 
+  const URL_API = 'https://api-estoque-rcyp.onrender.com'
+
   const buscarProdutos = () => {
-    fetch("http://127.0.0.1:8000/produtos")
+    fetch(`${URL_API}/produtos`)
       .then((res) => res.json())
       .then((data) => setProdutos(data))
       .catch((err) => console.error("Erro ao buscar produtos:", err));
@@ -22,8 +24,8 @@ function App() {
     e.preventDefault();
 
     const url = editandoId
-      ? `http://127.0.0.1:8000/produtos/${editandoId}`
-      : "http://127.0.0.1:8000/produtos";
+      ? `${URL_API}/produtos/${editandoId}`
+      : `${URL_API}/produtos`;
     const method = editandoId ? "PUT" : "POST";
 
     fetch(url, {
@@ -48,7 +50,7 @@ function App() {
   };
 
   const handleDeletar = (id) => {
-    fetch(`http://127.0.0.1:8000/produtos/${id}`, { method: "DELETE" })
+    fetch(`${URL_API}/produtos/${id}`, { method: "DELETE" })
       .then(() => buscarProdutos())
       .catch((err) => console.error("Erro ao deletar produto:", err));
   };
