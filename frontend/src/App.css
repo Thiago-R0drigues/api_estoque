@@ -1,0 +1,87 @@
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  font-family: system-ui, sans-serif;
+  padding: 0 16px;
+}
+
+h1 {
+  color: #222;
+  margin-bottom: 24px;
+}
+
+.form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.form input {
+  flex: 1;
+  min-width: 120px;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.form button:hover {
+  background-color: #1d4ed8;
+}
+
+.form button.cancelar {
+  background-color: #6b7280;
+}
+
+.form button.cancelar:hover {
+  background-color: #4b5563;
+}
+
+.lista {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.acoes {
+  display: flex;
+  gap: 6px;
+}
+
+.acoes button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  background-color: #e5e7eb;
+}
+
+.acoes button.deletar {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.acoes button.deletar:hover {
+  background-color: #fecaca;
+}
